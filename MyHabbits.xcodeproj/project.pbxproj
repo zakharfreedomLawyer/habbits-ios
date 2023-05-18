@@ -13,6 +13,10 @@
 		B1DECE4129F3E620001ECBA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DECE3F29F3E620001ECBA6 /* Main.storyboard */; };
 		B1DECE4329F3E622001ECBA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DECE4229F3E622001ECBA6 /* Assets.xcassets */; };
 		B1DECE4629F3E622001ECBA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1DECE4429F3E622001ECBA6 /* LaunchScreen.storyboard */; };
+		B1DECE4E29F3E64F001ECBA6 /* HabitsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE4D29F3E64F001ECBA6 /* HabitsStore.swift */; };
+		B1DECE5029F400A8001ECBA6 /* HabitsViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE4F29F400A8001ECBA6 /* HabitsViewController .swift */; };
+		B1DECE5229F400C1001ECBA6 /* InfoViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */; };
+		B1DECE5429F70ADA001ECBA6 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		B1DECE4229F3E622001ECBA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1DECE4529F3E622001ECBA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B1DECE4729F3E622001ECBA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1DECE4D29F3E64F001ECBA6 /* HabitsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsStore.swift; sourceTree = "<group>"; };
+		B1DECE4F29F400A8001ECBA6 /* HabitsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitsViewController .swift"; sourceTree = "<group>"; };
+		B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfoViewController .swift"; sourceTree = "<group>"; };
+		B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,10 @@
 				B1DECE3929F3E620001ECBA6 /* AppDelegate.swift */,
 				B1DECE3B29F3E620001ECBA6 /* SceneDelegate.swift */,
 				B1DECE3D29F3E620001ECBA6 /* ViewController.swift */,
+				B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */,
+				B1DECE4F29F400A8001ECBA6 /* HabitsViewController .swift */,
+				B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */,
+				B1DECE4D29F3E64F001ECBA6 /* HabitsStore.swift */,
 				B1DECE3F29F3E620001ECBA6 /* Main.storyboard */,
 				B1DECE4229F3E622001ECBA6 /* Assets.xcassets */,
 				B1DECE4429F3E622001ECBA6 /* LaunchScreen.storyboard */,
@@ -138,9 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DECE4E29F3E64F001ECBA6 /* HabitsStore.swift in Sources */,
+				B1DECE5229F400C1001ECBA6 /* InfoViewController .swift in Sources */,
 				B1DECE3E29F3E620001ECBA6 /* ViewController.swift in Sources */,
 				B1DECE3A29F3E620001ECBA6 /* AppDelegate.swift in Sources */,
 				B1DECE3C29F3E620001ECBA6 /* SceneDelegate.swift in Sources */,
+				B1DECE5429F70ADA001ECBA6 /* PickerViewController.swift in Sources */,
+				B1DECE5029F400A8001ECBA6 /* HabitsViewController .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,13 +301,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHabbits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -301,6 +317,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ZK.MyHabbits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,13 +329,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyHabbits/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -328,6 +345,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ZK.MyHabbits;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

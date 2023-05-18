@@ -7,13 +7,54 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
-
-
 }
 
+final class MainViewController: UITabBarController {
+    
+    var firstTabBarController: UINavigationController!
+    var secondTabBarController: UINavigationController!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = .white
+        addController()
+        addHabits()
+}
+    
+    private func addController() {
+        firstTabBarController = UINavigationController.init(rootViewController:InfoViewController())
+        
+        secondTabBarController = UINavigationController.init(rootViewController: HabitsViewController())
+         
+//MARK:Создаем массив для контроллеров
+    
+        self.viewControllers = [firstTabBarController, secondTabBarController]
+        
+        let button1 = UITabBarItem(title: "Info", image: UIImage(systemName: "AppIcon"), tag: 0)
+        let button2 = UITabBarItem(title: "User", image: UIImage(systemName: "folder"), tag: 1)
+        firstTabBarController.tabBarItem = button1
+        secondTabBarController.tabBarItem = button2
+    }
+    
+    //MARK: Кнопка добавления привычки
+
+    func addHabits() {
+        let addHabits = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(newHabits))
+        navigationItem.rightBarButtonItem = addHabits
+}
+    
+    @objc func newHabits() {
+    let pickerViewController = PickerViewConroller()
+    navigationController?.inputViewController?.modalPresentationStyle = .fullScreen
+    self.present(pickerViewController, animated: true)
+  }
+}
+ 

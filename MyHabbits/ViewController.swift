@@ -30,15 +30,15 @@ final class MainViewController: UITabBarController {
 }
     
     private func addController() {
-        firstTabBarController = UINavigationController.init(rootViewController:InfoViewController())
+        firstTabBarController = UINavigationController.init(rootViewController:HabitsViewController())
         
-        secondTabBarController = UINavigationController.init(rootViewController: HabitsViewController())
+        secondTabBarController = UINavigationController.init(rootViewController: InfoViewController())
          
 //MARK:Создаем массив для контроллеров
     
         self.viewControllers = [firstTabBarController, secondTabBarController]
         
-        let button1 = UITabBarItem(title: "Info", image: UIImage(systemName: "AppIcon"), tag: 0)
+        let button1 = UITabBarItem(title: "Info", image: UIImage(systemName: "folder"), tag: 0)
         let button2 = UITabBarItem(title: "User", image: UIImage(systemName: "folder"), tag: 1)
         firstTabBarController.tabBarItem = button1
         secondTabBarController.tabBarItem = button2

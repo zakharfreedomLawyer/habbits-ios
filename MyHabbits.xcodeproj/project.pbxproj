@@ -18,6 +18,8 @@
 		B1DECE5229F400C1001ECBA6 /* InfoViewController .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */; };
 		B1DECE5429F70ADA001ECBA6 /* PickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */; };
 		B1DECE5A2A1909AC001ECBA6 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = B1DECE592A1909AC001ECBA6 /* SnapKit */; };
+		B1DECE862A2252AA001ECBA6 /* ProgressCollectionViewCell .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE852A2252A9001ECBA6 /* ProgressCollectionViewCell .swift */; };
+		B1DECE882A233754001ECBA6 /* Profile .swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DECE872A233753001ECBA6 /* Profile .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,8 @@
 		B1DECE4F29F400A8001ECBA6 /* HabitsViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HabitsViewController .swift"; sourceTree = "<group>"; };
 		B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InfoViewController .swift"; sourceTree = "<group>"; };
 		B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewController.swift; sourceTree = "<group>"; };
+		B1DECE852A2252A9001ECBA6 /* ProgressCollectionViewCell .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProgressCollectionViewCell .swift"; sourceTree = "<group>"; };
+		B1DECE872A233753001ECBA6 /* Profile .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,8 @@
 				B1DECE3D29F3E620001ECBA6 /* ViewController.swift */,
 				B1DECE5329F70ADA001ECBA6 /* PickerViewController.swift */,
 				B1DECE4F29F400A8001ECBA6 /* HabitsViewController .swift */,
+				B1DECE872A233753001ECBA6 /* Profile .swift */,
+				B1DECE852A2252A9001ECBA6 /* ProgressCollectionViewCell .swift */,
 				B1DECE5129F400C1001ECBA6 /* InfoViewController .swift */,
 				B1DECE4D29F3E64F001ECBA6 /* HabitsStore.swift */,
 				B1DECE3F29F3E620001ECBA6 /* Main.storyboard */,
@@ -158,9 +164,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1DECE862A2252AA001ECBA6 /* ProgressCollectionViewCell .swift in Sources */,
 				B1DECE4E29F3E64F001ECBA6 /* HabitsStore.swift in Sources */,
 				B1DECE5229F400C1001ECBA6 /* InfoViewController .swift in Sources */,
 				B1DECE3E29F3E620001ECBA6 /* ViewController.swift in Sources */,
+				B1DECE882A233754001ECBA6 /* Profile .swift in Sources */,
 				B1DECE3A29F3E620001ECBA6 /* AppDelegate.swift in Sources */,
 				B1DECE3C29F3E620001ECBA6 /* SceneDelegate.swift in Sources */,
 				B1DECE5429F70ADA001ECBA6 /* PickerViewController.swift in Sources */,

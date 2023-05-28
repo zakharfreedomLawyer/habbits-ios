@@ -81,6 +81,17 @@ final class InfoViewController: UIViewController {
         return titleLabel5
     }()
    
+    
+    //MARK: Седьмой заголовок
+    private lazy var titleLabel6: UILabel = {
+        let titleLabel6 = UILabel()
+        titleLabel6.text = "5.Держать планку 40 дней. Практикующий методику уже чувствует себя освободившимся от прошлого."
+        titleLabel6.font = .preferredFont(forTextStyle: .body)
+        titleLabel6.numberOfLines = 0
+        return titleLabel6
+    }()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -122,6 +133,7 @@ final class InfoViewController: UIViewController {
         stackView.addArrangedSubview(titleLabel3)
         stackView.addArrangedSubview(titleLabel4)
         stackView.addArrangedSubview(titleLabel5)
+        stackView.addArrangedSubview(titleLabel6) 
     }
 
 }
